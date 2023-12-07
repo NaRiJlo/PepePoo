@@ -1,0 +1,207 @@
+/*Растягивает навбар как-то*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/*Полоса прокрутки*/
+::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border:3px solid rgb(255, 255, 255);
+}
+/*Темный цвет для затемнения*/
+body{
+    background-color: black;
+}
+/*Фоновая картинка*/
+.bg{
+    margin-left: 50px;
+    opacity: 30%;
+    background-image: url(../img/1612909143_36-p-krasnii-fon-sssr-52.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+/*Навбар фон*/
+#nav ul{
+    z-index: 3;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    width: 100%;
+    border-bottom: 5px solid #ffffff ;
+}
+/*Навбар текст*/
+#nav li {
+    float: left;
+    font-size:large;
+}
+/*Навбар позиция и стиль*/
+#nav  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 100%;
+    background-color: #11111100;
+    border-bottom:0px solid white;
+    -webkit-transition: background-color 1s ease-in-out, border-bottom 0.5s linear, color 0.3s ease;
+}
+/*Навбар наведение и переход*/
+#nav  li a:hover {
+    position: relative;
+    border-bottom: 5px solid white;
+    font:bold;
+    background-color: #ffffff;
+    color:black;
+}
+/*Активная вкладка*/
+#nav .active{
+    position: relative;
+    border-bottom: 5px solid white;
+    font:bold;
+    background-color: #ffffff;
+    color:black;
+}
+/*Лого*/
+#nav h1{
+    float: right;
+    color:white;
+    margin-right: 30px;
+    cursor:default;
+}
+#nav p1{
+    font:bold;
+    float:left;
+    color:black;
+    background-color: white;
+    border-bottom:15px solid white;
+    font-size: 25px;
+}
+/*Основная панель для текста*/
+#backgroundshapes{
+    border: 0px solid white;
+    border-radius: 20px;
+    opacity: 75%;
+    z-index: 2;
+    float:center;
+    width: (100%-150);
+    margin-left:250px;
+    margin-right: 250px;
+    background-color: white;
+    top:150px;
+    position:relative;
+    font-family: 'Segoe UI', 'Tahoma, Geneva, Verdana, sans-serif';
+    box-shadow: 0px 0px 30px 30px;
+}
+/*Содержание*/
+#backgroundshapes ul{
+    position: relative;
+    top: 70px;
+    margin-left: 70px;
+}
+/*Картинка флага*/
+.country{
+    top:100px;
+    margin-left:525px;
+    position:absolute;
+    border: solid 1px black;
+    height: 200px;
+    width: 400px;
+    background-image: url(../img/Flag_of_the_Soviet_Union.svg.png);
+    background-size: cover;
+}
+/*заголовок*/
+.main{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right : 50px;
+    list-style-type: none;
+    border-bottom: solid 5px black;
+}
+/*Ссылки*/
+#backgroundshapes a{
+    font-size: 18px;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color 0.5s ease;
+}
+/*Активация ссылок*/
+#backgroundshapes a:hover{
+    color: rgb(198, 21, 21);
+}
+/*Основной текст*/
+.text{
+    text-indent: 30px;
+    font-family: 'Segoe UI', 'Tahoma, Geneva, Verdana, sans-serif';
+    margin-left:65px;
+    margin-right: 65px;
+    top:180px;
+    position: relative;
+    text-align: justify;
+    font-size:18px; 
+}
+/*Заголовки*/
+.text h1{
+    border-bottom: solid 5px black;
+    margin-bottom: 20px;
+}
+/*Кнопка возврата в начало страницы*/
+.back-to-top a{
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    padding-top:10px;
+    padding-left: 12px;
+    width: 120px;
+    height: 50px;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: rgb(71, 8, 8);
+    -webkit-transition: background-color 1.5s ease, color 1.5s ease;
+}
+/*Кнопка возврата в начало страницы при наведении*/
+.go-top {
+    z-index: 1;
+    right: 2rem;
+    bottom: 2rem;
+    position: fixed; 
+    transform: translateY(-50%); 
+    cursor: pointer; 
+    display: none; 
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.831);
+    border: 5px solid rgba(255, 255, 255, 0.751);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.789);
+    padding: 15px 10px;
+    -webkit-transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease ;
+  }
+  
+  /*прозрачность при наведении */
+  .go-top:hover {
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(1, 1, 1);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* отображения кнопки */
+  .go-top--show {
+    display: block;
+  }
+
+
+

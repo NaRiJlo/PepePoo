@@ -1,0 +1,208 @@
+/*Растягивает навбар как-то*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/*Полоса прокрутки*/
+::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border:3px solid rgb(255, 255, 255);
+}
+/*Темный цвет для затемнения*/
+body{
+    background-color: black;
+}
+/*Фоновая картинка*/
+.bg{
+    opacity: 30%;
+    background-image: url(../img/war.png);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+/*Навбар фон*/
+#nav ul{
+    z-index: 3;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    width: 100%;
+    border-bottom: 5px solid #ffffff ;
+}
+/*Навбар текст*/
+#nav li {
+    float: left;
+    font-size:large;
+}
+/*Навбар позиция и стиль*/
+#nav  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 100%;
+    background-color: #11111100;
+    border-bottom:0px solid white;
+    -webkit-transition: background-color 1s ease-in-out, border-bottom 0.5s linear, color 0.3s ease;
+}
+/*Навбар наведение и переход*/
+#nav  li a:hover {
+    position: relative;
+    border-bottom: 5px solid white;
+    font:bold;
+    background-color: #ffffff;
+    color:black;
+}
+#nav .active{
+    position: relative;
+    border-bottom: 5px solid white;
+    font:bold;
+    background-color: #ffffff;
+    color:black;
+}
+/*Лого*/
+#nav h1{
+    float: right;
+    color:white;
+    margin-right: 30px;
+    cursor:default;
+}
+#nav p1{
+    font:bold;
+    float:left;
+    color:black;
+    background-color: white;
+    border-bottom:15px solid white;
+    font-size: 25px;
+}
+/*Большое лого на главной странице*/
+#tittle h1{
+    opacity: 95%;
+    position:relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font: bold;
+    text-align: center ;
+    top:100px;
+    background-color: #000000;
+    color: white;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    padding-bottom: 13px;
+}
+/*Окошко с определением*/
+.info{
+    opacity: 90%;
+    top: 100px;
+    border-radius: 15px solid;
+    margin-left: 300px;
+    position: relative;
+    background-color: white;
+    width: 890px;
+    height: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+.info h2{
+    position: relative;
+    text-align: center;
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+    color:white;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info p1{
+    position: relative;
+    text-align: justify;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Мелкий текст под лого*/
+#tittle h4{
+    opacity: 95%;
+    position:relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center ;
+    color: white;
+    top: 40px;
+}
+/*Основная панель для текста*/
+#backgroundshapes{
+    border: 0px solid white;
+    border-radius: 20px;
+    opacity: 90%;
+    z-index: 2;
+    float:center;
+    width: (100%-500);
+    height: 450px;
+    margin-left:250px;
+    margin-right: 250px;
+    background-color: white;
+    top:150px;
+    position:relative;
+    box-shadow: 0px 0px 30px 30px;
+}
+/*Описание основной панели*/
+#backgroundshapes h3{
+    position:relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font: bold;
+    text-align: center ;
+    background-color: #000000;
+    color: white;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    padding-bottom: 13px;
+}
+/* флаги стран и их позиция*/
+.country{
+    z-index: 1;
+    height: 660px;
+    width: 980px;
+    background-color: rgba(255, 255, 255, 0); 
+    margin-left: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+.pic{
+    margin-top:50px;
+    text-align: center;
+    position: relative;
+    height: 120px;
+    width: 250px;
+    display: inline-block;
+}
+.two{
+    text-align: center;
+    margin-left: 100px;
+}
+.three{
+    margin-left: 100px;
+}
+.country a{
+    margin-top: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: 100%;
+    -webkit-transition:  color 0.5s ease, font-size 1s ease;
+}
+/*Изменения при наведении на флаги*/
+.country a:hover{
+    text-decoration: none;
+    color:#0000004a;
+    font-size: 100%;
+}
+
+
